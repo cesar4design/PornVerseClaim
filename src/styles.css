@@ -1,0 +1,225 @@
+body {
+  background: rgb(8, 5, 19);
+  background-image: url(../public/bg.png);
+  font-family: CataR;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../public/Gilroy-Light.otf);
+}
+
+@font-face {
+  font-family: CataR;
+  src: url(../public/Catamaran-Regular.ttf);
+}
+
+@font-face {
+  font-family: CataB;
+  src: url(../public/Catamaran-Bold.ttf);
+}
+
+.Main {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.Navbara {
+  border-radius: 18px;
+  color: white;
+  width: 95%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavbarLeft {
+  float: left;
+  font-weight: 400;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+}
+
+.Logo {
+  width: 45px;
+}
+.LogoName {
+  font-size: 27px;
+  color: #e6598e !important;
+  font-family: Gilroy;
+  padding-left: 5px;
+}
+
+
+.NavbarRight {
+  float: right;
+}
+
+
+
+
+.Contain {
+  border-radius: 18px;
+  text-align: center;
+  color: white;
+
+  max-width: 60vh;
+  margin: 0 auto;
+  margin-top: 45px;
+  padding: 40px 40px 60px 40px;
+  font-size: 18px;
+
+
+  box-shadow: 0px 0px 40px 10px #e6598f2b;
+  border-radius: 6px;
+  border: 1px solid #e6598e;
+}
+
+@media (max-width: 768px) {
+  .Navbara {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body {
+    background-repeat: no-repeat;
+    background-size: 1000%;
+    background-position: center;
+  }
+
+  .NavbarRight {
+    margin-top: 40px; /* Espacio entre los botones en la versión móvil */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Contain {
+    margin-top: 30px;
+    padding: 40px 20px 80px 20px;
+    width: 80%;
+  
+  }
+  .Main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+  
+}
+
+
+
+.ContainTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: -20px;
+}
+
+
+.AirdropImage {
+  width: 50%;
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+
+
+.Title {
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 10px;
+  font-family: CataB;
+}
+
+.Description {
+  font-family: Gilroy;
+  margin-top: -10px;
+  font-size: 15px;
+}
+
+.CheckText {
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgb(27, 27, 27);
+  border-radius: 12px;
+  margin-top: 25px;
+}
+
+.Green {
+  color: #e1317d;
+  font-family: Gilroy;
+}
+
+
+
+.BuyButton {
+  color: white;
+  font-family: CataB;
+  font-size: 18px;
+  width: 70%;
+  padding: 12px 0px;
+  border-radius: 12px;
+  outline: none;
+  border: 0px solid rgb(163, 17, 199);
+  background: #e1317d;
+  
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.BuyButton:hover {
+  background: #eb448c;
+ 
+  transition: 0.3s;
+
+}
+
+
+.pay {
+  margin-top: 15px;
+}
+
+.progress-bar {
+  background-color: #241f2b;
+  height: 10px;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 40px;
+
+}
+
+.progress {
+  background-color: #e1317d;
+  height: 100%;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+  border-radius: 12px;
+
+}
+
+.progress-text {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-family: CataR;
+
+}
+
+@media (max-width: 768px) {
+  .Main {width: 100%;}
+  .Navbara {
+    width: 90%;
+  }
+}
